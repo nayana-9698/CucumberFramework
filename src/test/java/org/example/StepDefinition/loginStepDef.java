@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.PageInitializer.pageInitializer;
 import org.example.PageObject.accountPage;
 import org.example.PageObject.homePage;
 import org.example.PageObject.loginPage;
@@ -13,15 +14,15 @@ import org.example.utils.driverFactory;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
-public class loginStepDef {
+public class loginStepDef extends pageInitializer {
 
     public static Logger logger = LogManager.getLogger(loginStepDef.class);
 
-    hooks hooks = new hooks();
-    WebDriver driver = driverFactory.getDriver();
-    loginPage loginPage = new loginPage(driver);
-    homePage homePage = new homePage(driver);
-    accountPage ap = new accountPage(driver);
+//    hooks hooks = new hooks();
+//    WebDriver driver = driverFactory.getDriver();
+//    loginPage loginPage = new loginPage(driver);
+//    homePage homePage = new homePage(driver);
+//    accountPage ap = new accountPage(driver);
 
     @Given("As a user I want to launch to the application")
     public void as_a_user_i_want_to_login_to_the_application() {
@@ -85,4 +86,25 @@ public class loginStepDef {
             Assert.fail();
         }
     }
+
+    @When("user enters email {string} and password {string}")
+    public void userEntersEmailAndPassword(String email, String password) {
+        loginPage.seteMailAddress(email);
+        loginPage.setPassword(password);
+    }
+
+    @Then("the login {string} should be displayed")
+    public void theLoginShouldBeDisplayed(String expectedResult) {
+
+        switch (expectedResult) {
+            case "success":
+                Assert.assertTrue(accountPage.isMyAccount());
+                break;
+            case "login error":
+//                Assert.assertTrue(loginPage.getWarningMessage().contains("No match for E-Mail Address and/or Password."));
+//                break;
+        }
+    }
+
 }
+
