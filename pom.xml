@@ -23,13 +23,13 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-api</artifactId>
-      <version>5.13.0-M2</version>
-      <scope>test</scope>
-    </dependency>
+<!--    &lt;!&ndash; https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.junit.jupiter</groupId>-->
+<!--      <artifactId>junit-jupiter-api</artifactId>-->
+<!--      <version>5.13.0-M2</version>-->
+<!--      <scope>test</scope>-->
+<!--    </dependency>-->
 
     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
     <dependency>
@@ -70,12 +70,12 @@
       <version>4.30.0</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-    <dependency>
-      <groupId>com.aventstack</groupId>
-      <artifactId>extentreports</artifactId>
-      <version>5.1.2</version>
-    </dependency>
+<!--    &lt;!&ndash; https://mvnrepository.com/artifact/com.aventstack/extentreports &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>com.aventstack</groupId>-->
+<!--      <artifactId>extentreports</artifactId>-->
+<!--      <version>5.1.2</version>-->
+<!--    </dependency>-->
 
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
@@ -95,12 +95,12 @@
       <version>2.24.3</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/tech.grasshopper/cucumber-pdf-report -->
-    <dependency>
-      <groupId>tech.grasshopper</groupId>
-      <artifactId>cucumber-pdf-report</artifactId>
-      <version>2.14.0</version>
-    </dependency>
+<!--    &lt;!&ndash; https://mvnrepository.com/artifact/tech.grasshopper/cucumber-pdf-report &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>tech.grasshopper</groupId>-->
+<!--      <artifactId>cucumber-pdf-report</artifactId>-->
+<!--      <version>2.14.0</version>-->
+<!--    </dependency>-->
 
     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
     <dependency>
